@@ -1,0 +1,10 @@
+.idea
+node_modules
+*.map
+tmp
+public/**/*.zip
+public.zip
+build-demo.zip
+
+npm-debug.log
+.DS_store

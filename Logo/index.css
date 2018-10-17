@@ -1,0 +1,140 @@
+body {
+  background: #0642b5;
+}
+
+li {
+  list-style: none;
+}
+.logo {
+  position: relative;
+}
+.shape {
+  /* transform: scale(0.1); */
+  zoom: 0.02;
+}
+
+.rectangle {
+  width: 346px;
+  height: 1027px;
+  background: #fff;
+}
+
+.triangle-bt-left {
+  width: 0px;
+  height: 0px;
+  border-right: 173px solid #fff;
+  border-top: 100px solid #fff;
+  border-left: 173px solid transparent;
+  border-bottom: 100px solid transparent;
+}
+
+.triangle-bt-right {
+  width: 0px;
+  height: 0px;
+  border-right: 173px solid transparent;
+  border-top: 100px solid #fff;
+  border-left: 173px solid #fff;
+  border-bottom: 100px solid transparent;
+
+}
+
+.triangle-left {
+  width: 0px;
+  height: 0px;
+  border-right: 173px solid #fff;
+  border-top: 100px solid transparent;
+  border-left: 173px solid transparent;
+  border-bottom: 100px solid #fff;
+}
+.triangle-right {
+  width: 0px;
+  height: 0px;
+  border-right: 173px solid transparent;
+  border-top: 100px solid transparent;
+  border-left: 173px solid #fff;
+  border-bottom: 100px solid #fff;
+}
+
+.edge-item{
+  position: absolute;
+}
+
+.edge-item-left {
+  left: 0;
+  top: 32px;
+}
+
+.edge-item-left-top {
+  left: 10.5px;
+  top: 13.6px;
+  transform: rotate(60deg);
+}
+
+.edge-item-right-top {
+  top: 13.6px;
+  left: 31.6px;
+  transform: rotate(-60deg);
+}
+
+.edge-item-right {
+  top: 31.8px;
+  left: 42.2px;
+}
+.edge-item-bottom {
+  top: 50px;
+  left: 10px;
+}
+
+.twig-shape {
+  zoom: 0.008;
+}
+.twig {
+  position: absolute;
+}
+.twig-left-1 {
+  left: -1.5px;
+  top: 2px;
+}
+
+.twig-left-2 {
+  left: 3px;
+  top: 5px;
+}
+
+.twig-left-3 {
+  left: 8px;
+  top: 8px;
+}
+
+.twig-center {
+  left: 13px;
+  top: 10px;
+}
+.twig-center .triangle-right {
+  position: absolute;
+}
+
+.twig-right-1 {
+  left: 18px;
+  top: 8px;
+}
+
+.twig-right-2 {
+  left: 22.5px;
+  top: 5px;
+}
+
+.twig-right-3 {
+  left: 27px;
+  top: 3px;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #fff;
+  border-left: 173px solid transparent;
+  border-right: 173px solid transparent;
+}
+
+
