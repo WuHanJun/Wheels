@@ -4,6 +4,7 @@ import didUpload from './didUpload'
 import updateImg from './updateImg'
 import upload from './upload'
 import willUpload from './willUpload'
+import convertToBase64 from './convertToBase64'
 
 import Promise from '../utils/promise'
 import loop from '../utils/loop'
@@ -15,7 +16,8 @@ const actions = {
   didUpload,
   updateImg,
   upload,
-  willUpload
+  willUpload,
+  convertToBase64
 }
 
 export default function actionRegister (container) {

@@ -5,4 +5,5 @@ export default (container, path) => Promise
   .then(() => {
     const {prefix} = container
     getElByID(`${prefix}-show`).src = path
+    return path
   })
