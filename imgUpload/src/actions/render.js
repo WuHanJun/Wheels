@@ -7,12 +7,12 @@ export default container => Promise
     const {el, prefix} = container
     addClass(el, 'img-upload')
     const domList = [
-      `<img src='./src/imgs/bg.jpg' id='${prefix}-show' crossOrigin='Anonymous'></img>`,
+      `<img src='./src/imgs/default.jpg' id='${prefix}-show' crossOrigin='Anonymous' name='default'></img>`,
       `<canvas id='${prefix}-canvas'></canvas>`,
       `<input type='file' name='file' id='${prefix}-file-ipt'></input>`
     ]
     el.innerHTML = domList.join('')
-    el.insertAdjacentHTML('afterend', `<a href='' download='bg' id='${prefix}-download'>下载</a>`)
+    el.insertAdjacentHTML('afterend', `<a href='' id='${prefix}-download'>下载</a>`)
     el.insertAdjacentHTML('afterend', `<p>点击图片编辑</p>`)
     container.inputEl = getElByID(`${prefix}-file-ipt`)
     container.downloadEl = getElByID(`${prefix}-download`)

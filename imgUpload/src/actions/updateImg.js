@@ -1,9 +1,10 @@
 import {getElByID} from '../utils/dom'
 
-export default (container, path) => Promise
+export default (container, path, name) => Promise
   .resolve()
   .then(() => {
-    const {prefix} = container
-    getElByID(`${prefix}-show`).src = path
+    const {showEl} = container
+    showEl.src = path
+    showEl.name = name
     return path
   })

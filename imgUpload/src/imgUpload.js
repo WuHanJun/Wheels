@@ -11,8 +11,10 @@ class ImgUpload {
       method: 'PUT',
       inputName: 'file',
       parseResponse: (res) => {
-        const path = JSON.parse(res).key
-        return `http://10.0.1.21:3000/upload/${path}`
+        res = JSON.parse(res)
+        const path = `http://10.0.1.21:3000/upload/${res.path}`
+        const name = res.name
+        return {path, name}
       }
     }
     this.options = Object.assign({}, defaultOptions, options)

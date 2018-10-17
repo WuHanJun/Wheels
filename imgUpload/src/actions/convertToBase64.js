@@ -6,5 +6,5 @@ export default (container) => Promise
     canvasEl.height = showEl.naturalHeight
     canvasEl.getContext('2d').drawImage(showEl, 0, 0)
     downloadEl.href = canvasEl.toDataURL()
-    downloadEl.download = 'img'
+    downloadEl.download = showEl.name
   })

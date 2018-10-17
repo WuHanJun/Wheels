@@ -8,8 +8,8 @@ export default (container, data) => Promise
 
     http({url, method, data})
       .then((res) => {
-        const path = parseResponse(res)
-        act('didUpload').then(() => act('updateImg', path))
+        const {path, name} = parseResponse(res)
+        act('didUpload').then(() => act('updateImg', path, name))
       })
       .catch((e) => {
         console.log(e)
